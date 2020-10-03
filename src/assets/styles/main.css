@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  min-height: 100%; }
+
+.app {
+  height: 100vh;
+  background-image: url("../images/main.jpg");
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); }
+
+.header {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header .weather-input {
+    text-align: center;
+    font-size: 3rem;
+    background: rgba(220, 220, 220, 0.5);
+    border-radius: 10px;
+    border: none; }
+
+/*# sourceMappingURL=main.css.map */
