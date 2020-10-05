@@ -5,7 +5,8 @@
   box-sizing: border-box; }
 
 html, body {
-  min-height: 100%; }
+  min-height: 100%;
+  font-family: "Montserrat", sans-serif; }
 
 .app {
   height: 100vh;
@@ -13,8 +14,7 @@ html, body {
   background-size: cover;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  font-family: 'Montserrat', sans-serif; }
+  grid-template-columns: repeat(3, 1fr); }
 
 .header {
   grid-column: 1 / -1;
@@ -30,8 +30,7 @@ html, body {
     background: rgba(220, 220, 220, 0.5);
     border-radius: 10rem;
     outline: none;
-    border: none;
-    font-family: 'Montserrat', sans-serif; }
+    border: none; }
   .header .submit-button {
     background-color: transparent;
     border: none;

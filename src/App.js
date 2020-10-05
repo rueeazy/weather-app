@@ -11,6 +11,7 @@ function App() {
   const [tempData, setTempData] = useState('')
   const [humidData, setHumidData] = useState('')
   const [description, setDescription] = useState('')
+  const [dataCityName, setDataCityName] = useState('')
   const [minTemp, setMinTemp] = useState('')
   const [maxTemp, setMaxTemp] = useState('')
   const [unit, setUnit] = useState('F')
@@ -51,8 +52,7 @@ function App() {
       return response.json();
     })
     .then((response) => {
-      console.log(response)
-      // setDataCityName(response.name)
+      setDataCityName(response.name)
       setCountry(response.sys.country)
       setTempData(Math.round(response.main.temp))
       setMinTemp(Math.round(response.main.temp_min))
@@ -78,6 +78,7 @@ function App() {
       humidData={humidData}
       description={description}
       cityName={cityName}
+      dataCityName={dataCityName}
       country={country}
       unit={unit} />
       <Footer
