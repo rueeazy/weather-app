@@ -1,12 +1,13 @@
 import React from 'react';
 
-function MainContent() {
+function MainContent(props) {
+
   return (
     <div className="main-content">
-      <div className="location">Aptos</div>
-      <div className="temp">53°F</div>
-      <div className="humidity">Humidity: 44%</div>
-      <div className="description">Description: Foggy</div>
+      <div className="location">{props.cityName}, {props.country}</div>
+      <div className="temp">{props.tempData}°{props.unit}</div>
+      <div className="humidity">Humidity: {props.humidData}%</div>
+      <div className="description">Description: {props.description}</div>
     </div>
   );
 }
