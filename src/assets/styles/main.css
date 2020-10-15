@@ -21,7 +21,8 @@ html, body {
   grid-row: 1 / 2;
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  height: 33vh; }
   .header .search-bar {
     display: flex; }
   .header .weather-input {
@@ -102,9 +103,10 @@ html, body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5rem;
+  align-self: end;
   background: rgba(220, 220, 220, 0.7);
-  font-weight: 500; }
+  font-weight: 500;
+  height: 20vh; }
   .footer .info {
     display: flex;
     flex-direction: column;
@@ -123,7 +125,7 @@ html, body {
       font-size: 1.5rem; }
     .main-content .temp {
       font-size: 3rem; } }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .main-content {
     grid-column: 1 / -1;
     margin: 0rem 4rem; }

@@ -29,6 +29,7 @@ html, body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 33vh;
 
     .search-bar {
         display: flex;
@@ -143,9 +144,10 @@ html, body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5rem;
+    align-self: end;
     background: rgba(220,220,220,.7);
     font-weight: 500;
+    height: 20vh;
 
     .info {
         display: flex;
@@ -179,7 +181,7 @@ html, body {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .main-content {
     grid-column: 1 / -1;
     margin: 0rem 4rem;
